@@ -1,5 +1,6 @@
 // https://cursos.alura.com.br/course/javascript-es6-orientacao-a-objetos-parte-2
 // npm install json-server -g
+
 // https://cursos.alura.com.br/formacao-programacao?preRequirementFrom=js-backend
 
 
@@ -30,7 +31,14 @@ console.log(ul);
 let x = [8,3,4,5,6,7];
 console.log(x)
 
-function xxx(arr, num) {
-    console.log(arr[num - 1])
+function funcoes(arr) {
+    arr.forEach(a => {
+        if(a% 2 == 0) {
+            console.log('essa porra é par.')
+        } else {
+            console.log('essa porra é impar.')
+        }    
+    });
 }
-xxx(x, 3)
+
+funcoes(x);
